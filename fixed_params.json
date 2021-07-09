@@ -1,0 +1,17 @@
+{
+  "transmission_rate": [0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3],
+  "incubation_rate": [0.14, 0.14, 0.14, 0.14, 0.14, 0.14, 0.14, 0.14, 0.14, 0.14, 0.14, 0.14, 0.14, 0.14, 0.14, 0.14, 0.14],
+  "death_rate": [0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3],
+  "recovery_rate": [0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3],
+  "average_incubation_period": 7,
+  "average_infectious_period": 10,
+  "wearing_mask": 0.8,
+  "wearing_mask_protection": 0.8,
+  "social_distancing": 0.3,
+  "social_distancing_protection": 0.8,
+  "handwashing": 0.2,
+  "handwashing_protection": 0.8,
+  "min_age_restriction": 13,
+  "max_age_restriction": 65,
+  "agent_movement_range": 5
+}
