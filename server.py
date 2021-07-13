@@ -28,19 +28,20 @@ def parse_json(filename):
         content = json.load(file)
     return content
 
-grid = CanvasGrid(agent_portrayal, 50, 50, 500, 500)
+grid = CanvasGrid(agent_portrayal, 70, 70, 500, 500)
 series = [{"Label": "S", "Color": "Green"},
     {"Label": "E", "Color": "Yellow"},
     {"Label": "I", "Color": "Red"},
     {"Label": "D", "Color": "Grey"},
     {"Label": "R", "Color": "Blue"}]
-chart = ChartModule(series, 125, 300, "data_collector")
+chart = ChartModule(series, 125, 300, "data_collector_total")
 server = ModularServer(Covid19Model,
     [grid, chart],
     "Covid-19 Model",
     {
         "variable_params": parse_json("variable_params.json"),
-        "fixed_params": parse_json("fixed_params.json")
+        "fixed_params": parse_json("fixed_params.json"),
+        "contact_matrix": parse_json("contact_matrix_100.json")
     })
 server.port = 8521 # default
 server.launch()
